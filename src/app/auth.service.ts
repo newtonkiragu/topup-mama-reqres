@@ -10,7 +10,7 @@ export class AuthService {
 
   isUserLoggedIn: boolean = false;
 
-  login(userName: string, password: string): Observable {
+  login(userName: string, password: string): Observable<any> {
     console.log(userName);
     console.log(password);
     this.isUserLoggedIn = userName == 'admin' && password == 'admin';
